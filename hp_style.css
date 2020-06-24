@@ -4,12 +4,12 @@
     font-weight: normal;
     src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
 }
-body{
+/* body{
     background-image: url(cali-bg.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 nav{
     background-color: #8e1e2e;
 }
@@ -28,4 +28,25 @@ nav{
 .nav-item{
     display: flex;
 }
+#intro{
+    height:800px;
+    background-image: url(cali-bg.jpeg);
+    background-size: cover;
+}
+#intro h1{
+    padding-top: 190px;
+    font-size: 100px;
+    font-family: 'League Spartan Bold';
+    color: white;
+}
+#intro h2{
+    margin-top: 30px;
+    font-size: 55px;
+    font-family: 'League Spartan Bold';
+    color: #8e1e2e;
+}
+.row{
+    display:flex;
+}
+
 
