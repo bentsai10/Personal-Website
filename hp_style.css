@@ -4,21 +4,16 @@
     font-weight: normal;
     src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
 }
-/* body{
-    background-image: url(cali-bg.jpeg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
+
 nav{
-    background-color: #8e1e2e;
+    background-color: #1d5892;
 }
     .navbar-brand{
         font-family: 'League Spartan Bold';
         font-size: 30px;
     }
     .navbar span{
-        color: #dccea5;
+        color: #82aedc;
     }
     .navbar #memoji{
         height:50px;
@@ -29,24 +24,52 @@ nav{
     display: flex;
 }
 #intro{
-    height:800px;
+    height:700px;
     background-image: url(cali-bg.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
 }
-#intro h1{
-    padding-top: 190px;
-    font-size: 100px;
-    font-family: 'League Spartan Bold';
-    color: white;
-}
-#intro h2{
-    margin-top: 30px;
-    font-size: 55px;
-    font-family: 'League Spartan Bold';
-    color: #8e1e2e;
+    #intro h1{
+        padding-top: 190px;
+        font-size: 100px;
+        font-family: 'League Spartan Bold';
+        color: white;
+    }
+    #intro h2{
+        margin-top: 30px;
+        font-size: 55px;
+        font-family: 'League Spartan Bold';
+        color: #82aedc;
 }
 .row{
     display:flex;
 }
-
+#bg1{
+    margin-top: -35px;
+    height:300px;
+    background-image: url(tw-bg.jpeg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.port-header{
+    margin-bottom: 50px;
+}
+.project{
+    height: 284px;
+    width:500px
+}
+    .projects{
+        margin-bottom: 50px;
+        padding-bottom: 50px;
+        border-bottom: 3px solid #1d5892;
+    }
+        .tech-icon{
+            height:100px;
+            width:100px;
+        }
+    
 
