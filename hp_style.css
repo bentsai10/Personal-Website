@@ -1,0 +1,31 @@
+@font-face {
+    font-family: 'League Spartan Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
+}
+body{
+    background-image: url(cali-bg.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+nav{
+    background-color: #8e1e2e;
+}
+    .navbar-brand{
+        font-family: 'League Spartan Bold';
+        font-size: 30px;
+    }
+    .navbar span{
+        color: #dccea5;
+    }
+    .navbar #memoji{
+        height:50px;
+        width:50px;
+        margin-top: -10px;
+    }
+.nav-item{
+    display: flex;
+}
+
