@@ -4,6 +4,9 @@
     font-weight: normal;
     src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
 }
+body{
+    background-color: #82aedc;
+}
 
 nav{
     background-color: #1d5892;
