@@ -1,18 +1,81 @@
-@font-face {
-    font-family: 'League Spartan Bold';
-    font-style: normal;
-    font-weight: normal;
-    src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
+@import url('https://fonts.googleapiscom/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
 }
 body{
-    background-color: #82aedc;
+    background: lightslategray;
+    display:flex;
+    /* background:#437CFE; */
 }
+#nav{
+    align-items: center;
+    min-height: 100vh;
+    min-width: 76%;
+    overflow: hidden;
+    display: flex;
+    margin-left: 50px;
+}
+#titles{
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+}
+ul li{
+    list-style: none;
+}
+    ul li a{
+        position: relative;
+        display: block;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-size: 3em;
+        font-weight: 900;
+        text-decoration: none;
+        line-height: 2em;
+    }
+        ul li a:hover{
+            color: lightslategray;
+            -webkit-text-stroke: 1px black;
+        }
+        ul li a:before, ul li a:after{
+            content: attr(data-text);
+            position: absolute;
+            top:0;
+            left:0;
+            transition: 0.5s;
+        }
+        ul li a:hover:before{
+            color: #547CEA;
+            z-index:1;
+            -webkit-text-stroke: 1px black;
+            transform: translate(6px, -6px);
+        }
+        ul li a:hover:after{
+            color: #FFC447;
+            z-index:2;
+            -webkit-text-stroke: 1px black;
+            transform: translate(12px, -12px);
+        }
+    ul li h2{
+        position: relative;
+        display: block;
+        color: transparent;
+        -webkit-text-stroke: 1px white;
+        font-size: 3em;
+        font-weight: 900;
+        text-decoration: none;
+        line-height: 1.8em;
+    }
 
-nav{
+
+/* nav{
     background-color: #1d5892;
 }
     .navbar-brand{
-        font-family: 'League Spartan Bold';
+        font-family: Poppins;
         font-size: 30px;
     }
     .navbar span{
@@ -37,13 +100,13 @@ nav{
     #intro h1{
         padding-top: 190px;
         font-size: 100px;
-        font-family: 'League Spartan Bold';
+        font-family: Poppins;
         color: white;
     }
     #intro h2{
         margin-top: 30px;
         font-size: 55px;
-        font-family: 'League Spartan Bold';
+        font-family: Poppins;
         color: #82aedc;
 }
 .row{
@@ -73,6 +136,6 @@ nav{
         .tech-icon{
             height:100px;
             width:100px;
-        }
+        } */
     
 
