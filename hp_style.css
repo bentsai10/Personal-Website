@@ -6,8 +6,10 @@
 }
 body{
     background: lightslategray;
-    display:flex;
     /* background:#437CFE; */
+}
+#intro{
+    display:flex;
 }
 #nav{
     align-items: center;
@@ -68,6 +70,14 @@ ul li{
         font-weight: 900;
         text-decoration: none;
         line-height: 1.8em;
+    }
+#bg1{
+        height:300px;
+        background-image: url(tw-bg.jpeg);
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
 
