@@ -10,10 +10,11 @@
         <script src="js/bootstrap.min.js"></script>
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="hp_style.css">
+        <script src="animations.js"></script>
     </head>
     <body>
         <nav class="navbar sticky-top navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="#"><img src="myMemoji.png" alt="personal memoji" id = "memoji"><span>B</span>enjamin <span>T</span>sai</a>
+            <a class="navbar-brand" href="#"><img src="myMemoji.png" alt="personal memoji" id = "memoji"><span class = "nav_span">B</span>enjamin <span class = "nav_span">T</span>sai</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -50,17 +51,18 @@
               </ul>
             </div>
         </nav>
+        
         <div id = "intro">
             <div class = "caption">
-                <h1 class = "text-center">Benjamin Tsai</h1>
-                <h2 class = "text-center">Developer, Creator, Student</h2>
+                <h1 class = "text-center" id = "fade_name"></h1>
+                <h2 class = "text-center fade_in" id = "fade_titles">Creator, Developer, Leader</h2>
             </div>
         </div>
         <div  id = "about" class = "jumbotron" >
             <div id = "about" class = "container">
                 <div class = "row">
                     <div class = "col-9">
-                        <h1 class = "display-3">About Me</h1>
+                        <h1 class = "display-3 fadeinleft">About Me</h1>
                         <p class = "lead">Hi! My name's Ben and I am a <strong>full-stack web-developer</strong> with additional experience in iOS mobile app programming. I am currently a junior at Boston College studying Computer Science and Information Systems. Coding became a part of my life in high school and I've never looked back since. The mastering of coding languages has an empowering effect and makes me feel like I can create anything I imagine. Because of this, I am always eager to constantly expanding my skillset!</p>
                         <p class = "lead">Besides coding, some of my interests include basketball, gaming, writing film analysis, and adventuring outside.</p>
                     </div>
@@ -73,7 +75,7 @@
         <div id = "bg1"></div>
         <div class = "jumbotron" id = "portfolio">
             <div  class = "container">
-                <h1 class = "display-3 port-header">Portfolio</h1>
+                <h1 class = "display-3 port-header fadeinleft">Portfolio</h1>
                 <div class = "row projects">
                     <img class = "project" id = "quaranthings" src="quaranthings.png" alt="quaranthings snapshot">
                     <div class = "col-6 ml-5 project-info">
@@ -99,7 +101,7 @@
                     <img class = "project nba" src="nba101.png" alt="">
                     <img class = "project nba"src="nba1012.png" alt="">
                     <div class = "col-6 ml-5 project-info">
-                        <div class = "row" >
+                        <div class = "row " >
                             <h2 class = "display-4 col-10" style = "display: inline-block;">NBA 101</h2>
                             <a href="https://github.com/bentsai10/NBA-101" ><svg width="50" height="50" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: 10px;">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#1B1F23"/></svg>
@@ -115,12 +117,13 @@
                     <img class = "project" id = "visualizer" src="visualizer.png" alt="">
                     <div class = "col-6 ml-5 project-info">
                         <div class = "row" >
-                            <h2 class = "display-4 col-10" style = "display: inline-block;">Algorithm Visualizer</h2>
+                            <h2 class = "display-4 col-10" style = "display: inline-block;">Algorithm Visualizer <p>(In Progress)</p></h2>
+                            <h5></h5>
                             <a href="https://github.com/bentsai10/Algorithm-Visualizer" ><svg width="50" height="50" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-top: 10px;">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8C0 11.54 2.29 14.53 5.47 15.59C5.87 15.66 6.02 15.42 6.02 15.21C6.02 15.02 6.01 14.39 6.01 13.72C4 14.09 3.48 13.23 3.32 12.78C3.23 12.55 2.84 11.84 2.5 11.65C2.22 11.5 1.82 11.13 2.49 11.12C3.12 11.11 3.57 11.7 3.72 11.94C4.44 13.15 5.59 12.81 6.05 12.6C6.12 12.08 6.33 11.73 6.56 11.53C4.78 11.33 2.92 10.64 2.92 7.58C2.92 6.71 3.23 5.99 3.74 5.43C3.66 5.23 3.38 4.41 3.82 3.31C3.82 3.31 4.49 3.1 6.02 4.13C6.66 3.95 7.34 3.86 8.02 3.86C8.7 3.86 9.38 3.95 10.02 4.13C11.55 3.09 12.22 3.31 12.22 3.31C12.66 4.41 12.38 5.23 12.3 5.43C12.81 5.99 13.12 6.7 13.12 7.58C13.12 10.65 11.25 11.33 9.47 11.53C9.76 11.78 10.01 12.26 10.01 13.01C10.01 14.08 10 14.94 10 15.21C10 15.42 10.15 15.67 10.55 15.59C13.71 14.53 16 11.53 16 8C16 3.58 12.42 0 8 0Z" transform="scale(64)" fill="#1B1F23"/></svg>
                             </a>
                         </div>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat cupiditate tempore, harum, doloribus, dolore corporis illum numquam molestiae ducimus aperiam nulla rerum sequi et voluptate. Reprehenderit commodi reiciendis quis quae?</p>
+                        <p>The Algorithm Visualizer is a simple webpage that allows users to visualize popular sorting algorithms (Quick, Merge, Bubble, Selection, Heap, Insertion) and pathfinding algorithms(Djikstra's, A* Search, Breadth-First-Search). Users can alter array sizes for sorting and move start/target nodes and add walls for pathfinding. </p>
                         <h4>Technologies Used:</h4>
                         <img class = "tech-icon" src="JavaScript.png" alt="javascript icon">
                         <img class = "tech-icon" src="python.png" alt="python icon">
@@ -136,7 +139,7 @@
         <div id = "bg2"></div>
         <div class = "jumbotron" id = "technologies">
             <div  class = "container">
-                <h1 class = "display-3 port-header">My Technologies</h1>
+                <h1 class = "display-3 port-header fadeinleft">My Technologies</h1>
 
                 <p class = "lead">Some of the technologies in my constantly expanding arsenal...</p>
                 <div class = "row">
@@ -200,25 +203,25 @@
         <div id = "bg3"></div>
         <div class = "jumbotron" id = "contact">
             <div class = "container">
-                <h1 class = "display-3 port-header">Contact Me</h1>
+                <h1 class = "display-3 port-header fadeinleft">Contact Me</h1>
                 <div class = "row contact-row">
                     <div class = "tech">
-                        <a href="mailto:benjamintsa@gmail.com" target="_blank"><img class = "larger-tech-icon contact-icon"  src="gmail.png" alt="gmail icon"></a>
+                        <a href="mailto:benjamintsa@gmail.com" target="_blank" id = "Email" class="contact_link"><img class = "larger-tech-icon contact-icon"  src="gmail.png" alt="gmail icon"></a>
                     </div>
                     <div class = "tech">
-                        <a href="https://www.linkedin.com/in/benjaminpctsai/" target="_blank"><img class = "larger-tech-icon contact-icon" src="linkedin.png" alt="linkedin icon"></a>
+                        <a href="https://www.linkedin.com/in/benjaminpctsai/" target="_blank" id = "LinkedIn" class="contact_link"><img class = "larger-tech-icon contact-icon" src="linkedin.png" alt="linkedin icon"></a>
                     </div>
                     <div class = "tech">
-                        <a href="https://github.com/bentsai10" target="_blank"><img class = "larger-tech-icon contact-icon" src="github.png" alt="github icon"></a>
+                        <a href="https://github.com/bentsai10" target="_blank" id = "Github" class="contact_link"><img class = "larger-tech-icon contact-icon" src="github.png" alt="github icon"></a>
                     </div>
                     <div class = "tech">
-                        <a href="https://www.facebook.com/bensigh10/" target="_blank"><img class = "larger-tech-icon contact-icon" id = "facebook" src="facebook.png" alt="facebook icon"></a>
+                        <a href="https://www.facebook.com/bensigh10/" target="_blank" id = "Facebook" class="contact_link"><img class = "larger-tech-icon contact-icon" id = "facebook" src="facebook.png" alt="facebook icon"></a>
                     </div>
                     <div class = "tech">
-                        <a href="https://bentheredonethatweb.wordpress.com/" target="_blank"><img class = "larger-tech-icon contact-icon"  src="wordpress.png" alt="wordpress icon"></a>
+                        <a href="https://bentheredonethatweb.wordpress.com/" target="_blank" id = "Personal Blog" class="contact_link"><img class = "larger-tech-icon contact-icon"  src="wordpress.png" alt="wordpress icon"></a>
                     </div>
                     <div class = "tech">
-                        <a href="https://benjamintsai.wixsite.com/film-for-thought" target="_blank"><img class = "larger-tech-icon contact-icon" src="wordpress.png" alt="wordpress icon"></a>
+                        <a href="https://benjamintsai.wixsite.com/film-for-thought" target="_blank" id = "Film Blog" class="contact_link"><img class = "larger-tech-icon contact-icon" src="wordpress.png" alt="wordpress icon"></a>
                     </div>
                     <div id = "credits">Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a>  and <a href="https://www.flaticon.com/authors/iconixar" title="iconixar">iconixar</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
                 </div>

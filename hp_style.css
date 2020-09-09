@@ -2,7 +2,7 @@
     font-family: 'League Spartan Bold';
     font-style: normal;
     font-weight: normal;
-    src: local('League Spartan Bold'), url('LeagueSpartan-Bold.woff') format('woff');
+    src: local('League Spartan Bold'), url('LeagueSpartan-Bold.otf') format('otf');
 }
 @font-face {
     font-family: code;
@@ -27,7 +27,7 @@ nav{
     }
     .navbar span{
         /* color: #dccba0; */
-        color: #82aedc;
+        
     }
     .navbar #memoji{
         height:50px;
@@ -169,3 +169,36 @@ h1{
     font-family: 'League Spartan Bold' !important; 
     font-weight: bold !important;
 }
+.fade_in{
+    display: none;
+}
+#visualizer{
+    margin-top: 150px;
+}
+.typewrite{
+    color: white;
+}
+.fadeinleft {
+    opacity:0;
+    margin-left:-300px;
+    max-width:100%;
+}
+.fade_inward {
+    opacity:0;
+    max-width:100%;
+}
+span{
+    display: block;
+    margin-left: -10px;
+    color: white;
+    border-bottom: none;
+}
+.nav_span{
+    display:inline;
+    margin-left: 0px;
+    color: #82aedc;
+}
+.contact_link{
+    text-decoration: none;
+}
+    
